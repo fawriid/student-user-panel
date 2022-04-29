@@ -3,6 +3,9 @@
     height: 100vh;
     transition: all 200ms linear;
     /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .menuList{
@@ -104,6 +107,7 @@
     cursor: default;
     display: none;
     color: #1976d2;
+    background-color: #fff;
 }
 .descriptionInside{
     font-size:1rem;

@@ -1,13 +1,18 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+
+import styles from './Landing.module.css'
 
 // compponents
-import RigthSideMenu from '../Right side menu/RigthSideMenu';
+import Navbar from '../shared/Navbar/Navbar';
+import RigthSideMenu from '../shared/Right side menu/RigthSideMenu';
+import MainContent from '../shared/Main/MainContent';
+
 
 const Landing = () => {
     return (
         <>
             <Navbar />
+            <MainContent />
             <RigthSideMenu />
         </>
     );
