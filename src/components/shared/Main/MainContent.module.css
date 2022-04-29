@@ -116,7 +116,6 @@
     border-radius: 3px;
     position: absolute;
     left: -100%;
-    transform: translateX(-2px);
     top: 0;
     display: none;
     width: 100%;
