@@ -84,8 +84,11 @@
 }
 
 
-/*  drop left  */
-
+/*  drop left for art section  */
+.lessons ul a:hover{
+    background-color: #1976d2;
+    color: #fff;
+}
 .lessons ul{
     position: relative;
 }
@@ -96,14 +99,14 @@
     width: 100%;
 }
 .artDrop li{
-    padding-right: 10px;
     margin: .5rem 0;
     width: 100%;
     padding: 5px;
+    padding-right: 10px;
 }
 .artDrop ul a{
     text-decoration: none;
-    color: black;
+    color: #1976d2;
 }
 .artDrop{
     display: flex;
@@ -125,4 +128,8 @@
 }
 .artDrop li:hover{
     background-color: rgba(240, 240, 240, 0.644);
+}
+.artDrop li a:hover{
+    background-color: transparent;
+    color: #1976d2;
 }
