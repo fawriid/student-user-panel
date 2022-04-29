@@ -1,0 +1,179 @@
+.menu{
+    width: 60px;
+    height: 100vh;
+    transition: all 200ms linear;
+    /* overflow: hidden; */
+}
+
+.menuList{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menuList li{
+    position: relative;
+    font-size: 1.3rem;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms linear;
+}
+.menuList li:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menuList button{
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.menuList i{
+    color: #1976d2;
+}
+.menuList li:nth-child(8){
+    margin-bottom: auto;
+}
+.menuList li:first-child{
+    border-bottom: 1px #d9d9d9 solid;
+    margin-bottom: .2rem;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+.menuList li:first-child:hover{
+    background-color: transparent;
+}
+.caret{
+    transition: all 200ms linear;
+}
+.menuList li:first-child:hover .caret{
+    animation: caret .8s linear 1;
+}
+@keyframes caret {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-2px);
+
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+}
+.menuFirstLabel{
+    color: #1976d2;
+    font-size: 1rem;
+    display: none;
+}
+.menuList li:last-child{
+    font-size: 2rem;
+    background-color: #c4c4c4;
+    margin: 0;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transform: translateX(-40%);
+    border: 1px solid #1976d2;
+    border-right: 3px solid #1976d2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1rem 3rem;
+    cursor: default;
+    display: none;
+    color: #1976d2;
+}
+.descriptionInside{
+    font-size:1rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+.menuList li:hover .description,
+.menuList li:active .description{
+    display: flex;
+}
+
+/* MENU EXPAND */
+.menu.expand{
+    width: 200px;
+}
+.menu.expand .menuList{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.menu.expand .menuList li{
+    width: 100%;
+    justify-content: start;
+    padding-right: 10px;
+}
+.menu.expand .menuList li:hover{
+    border-left: 3px solid #1976d2;
+}
+.menu.expand .caret{
+    transform: rotate(180deg);
+}
+.menu.expand .menuList li:first-child:hover .caret{
+    animation:none;
+}
+.menu.expand .description{
+    display: flex;
+    border: none;
+}
+.menu.expand .menuList li:hover .description{
+    background-color: #fff;
+}
+.menu.expand .menuList li a{
+    z-index: 3;
+    margin-left: 2rem;
+}
+.menu.expand .description{
+    transform: none;
+    position: static;
+    cursor: pointer;
+    border: none ;
+    padding: 0;
+    width: auto;
+    padding-right: 10px;
+    transition: all 100ms linear;
+}
+.menu.expand .menuList li a{
+    margin: 0;
+}
+.menu.expand .menuList li:first-child{
+    width: 100%;
+    padding-right: 10px;
+    margin-right: 0;
+}
+.menu.expand .menuList li:last-child{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+.menu.expand .menuFirstLabel{
+    white-space: nowrap;
+    margin-left: 5px;
+    display: block;
+}
