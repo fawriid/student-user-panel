@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     height: 55px;
     position: fixed;
@@ -7,4 +7,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* z-index: -2; */
+    padding: 0 1rem;
+    padding-right: 4rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
+
+.navbarTwoSides ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarTwoSides ul li i {
+    margin-left: 5px;
+}
+.navbarTwoSides ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    transition: all 120ms linear;
+}
+.navbarTwoSides a {
+    transition: all 120ms linear;
+    text-decoration: none;
+    color: #969696;
+}
+.navbarTwoSides li:hover{
+    cursor: pointer;
+    color: #17d292;
+}
+.navbarTwoSides li:hover a{
+    color: #17d292;
+}
+

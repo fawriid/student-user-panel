@@ -115,9 +115,14 @@
     display: flex;
 }
 
+/* ******************************************** */
+/* ******************************************** */
+/* ******************************************** */
 /* MENU EXPAND */
 .menu.expand{
     width: 200px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0px);
 }
 .menu.expand .menuList{
     display: flex;

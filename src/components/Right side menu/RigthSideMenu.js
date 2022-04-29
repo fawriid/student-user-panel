@@ -28,7 +28,7 @@ const RigthSideMenu = () => {
                         </button>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-person-circle"></i>
                         </a>
                         <span className={styles.description}>
@@ -36,7 +36,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-journal-bookmark-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -44,7 +44,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-layers-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -52,7 +52,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-envelope-open-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -60,7 +60,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-clipboard2-check-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -68,7 +68,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-basket2"></i>
                         </a>
                         <span className={styles.description}>
@@ -76,7 +76,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-boombox-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -84,7 +84,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a>
+                        <a  href='#'>
                             <i class="bi bi-power"></i>
                         </a>
                     </li>
