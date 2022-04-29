@@ -12,7 +12,9 @@
     padding-right: 4rem;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
-
+.navbarTwoSides{
+    height: 100%;
+}
 .navbarTwoSides ul {
     display: flex;
     align-items: center;
@@ -20,6 +22,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 .navbarTwoSides ul li i {
@@ -30,6 +33,8 @@
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
+    padding: .3rem ;
+    height: 100%;
     font-size: 0.9rem;
     transition: all 120ms linear;
 }
