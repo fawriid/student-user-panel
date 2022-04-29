@@ -138,7 +138,7 @@
     margin: 5rem 3rem 0 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 /* right profile section */
 .rightSection {
@@ -186,5 +186,53 @@
 }
 /* left profile section */
 .leftSection {
+    margin-top: 3rem;
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+/* header */
+.leftHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.profileTitle{
+    /* color: #1976d2; */
+    padding: 0 .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #1976d2;
+    margin-left: 1rem;
+}
+.priceSection{
+    text-align: left;
+    border-bottom: 4px solid #ccc;
+    flex-grow:1 ;
+    padding-bottom: .65rem;
+}
+.priceSection > div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-left: .5rem;
+    font-size: .8rem;
+}
+.priceSection > div >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.priceSection > div > div p{
+    margin: 0;
+}
+.priceSection span{
+    color: #1976d2;
+    font-size: .7rem;
+}
+.priceSection i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: rgb(148, 148, 13);
 }

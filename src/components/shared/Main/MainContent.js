@@ -111,11 +111,31 @@ const MainContent = () => {
                             </div>
                             <div className={styles.questionBox}>
                                 <h5>سوالی داشتم ...</h5>
-                                <p>من اینجا هستم تا تو را راهنمایی کنم. <br />پس اگر هر سوالی داری,<br /> برایم ارسال کن</p>
+                                <p>
+                                    من اینجا هستم تا تو را راهنمایی کنم. <br />
+                                    پس اگر هر سوالی داری,
+                                    <br /> برایم ارسال کن
+                                </p>
                                 <button className={styles.button}>ارسال</button>
                             </div>
                         </div>
-                        <div className={styles.leftSection}></div>
+                        <div className={styles.leftSection}>
+                            <div className={styles.leftHeader}>
+                                <div className={styles.profileTitle}>
+                                    <h1> پروفایل من</h1>
+                                </div>
+                                <div className={styles.priceSection}>
+                                    <div>
+                                        <div>
+                                            <p>0.000 هزار تومان</p>
+                                            <span>مبلغ کیف پول شما</span>
+                                        </div>
+                                        <i class="bi bi-coin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className={styles.profileInformaions}></div> */}
+                        </div>
                     </div>
                 </div>
             </div>
