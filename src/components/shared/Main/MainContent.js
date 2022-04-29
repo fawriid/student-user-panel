@@ -30,6 +30,13 @@ const MainContent = () => {
                                         <a className="dropdown-item" href="#">
                                             هنر
                                         </a>
+                                        <div className={styles.artDrop}>
+                                            <ul>
+                                                <li><a href="#">نقاشی</a></li>
+                                                <li><a href="#">سفالگری</a></li>
+                                                <li><a href="#">خوش نویسی</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li>
                                         <a className="dropdown-item" href="#">
