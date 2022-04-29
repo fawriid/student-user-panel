@@ -32,9 +32,15 @@ const MainContent = () => {
                                         </a>
                                         <div className={styles.artDrop}>
                                             <ul>
-                                                <li><a href="#">نقاشی</a></li>
-                                                <li><a href="#">سفالگری</a></li>
-                                                <li><a href="#">خوش نویسی</a></li>
+                                                <li>
+                                                    <a href="#">نقاشی</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">سفالگری</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">خوش نویسی</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>
@@ -56,7 +62,7 @@ const MainContent = () => {
                                 </ul>
                             </div>
                             <div className={styles.searchField}>
-                                <input type='text' placeholder="جستجوی درس ..." />
+                                <input type="text" placeholder="جستجوی درس ..." />
                                 <i class="bi bi-search"></i>
                             </div>
                         </div>
@@ -76,7 +82,11 @@ const MainContent = () => {
                                 </button>
                                 <ul
                                     className="dropdown-menu"
-                                    style={{ textAlign: "right", width: "100%",borderRadius:'10px' }}
+                                    style={{
+                                        textAlign: "right",
+                                        width: "100%",
+                                        borderRadius: "10px",
+                                    }}
                                 >
                                     <li>
                                         <a className="dropdown-item" href="#">
@@ -91,6 +101,21 @@ const MainContent = () => {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div className={styles.myProfile}>
+                        <div className={styles.rightSection}>
+                            <i class="bi bi-person-circle"></i>
+                            <div className={styles.info}>
+                                <h5>رزیتا گل تراش</h5>
+                                <span>دانش اموز</span>
+                            </div>
+                            <div className={styles.questionBox}>
+                                <h5>سوالی داشتم ...</h5>
+                                <p>من اینجا هستم تا تو را راهنمایی کنم. <br />پس اگر هر سوالی داری,<br /> برایم ارسال کن</p>
+                                <button className={styles.button}>ارسال</button>
+                            </div>
+                        </div>
+                        <div className={styles.leftSection}></div>
                     </div>
                 </div>
             </div>

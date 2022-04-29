@@ -1,16 +1,15 @@
 /* hero section */
-.container{
+.container {
     width: 100%;
     padding: 4rem 4rem 0 0;
 }
 
-.hero{
+.hero {
     padding: 2rem 1.5rem 0 2rem;
     display: flex;
     align-items: center;
-
 }
-.hero h3{
+.hero h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +19,12 @@
     font-size: 1.7rem;
     font-weight: 700;
 }
-.hero h3 i{
+.hero h3 i {
     margin-left: 5px;
     margin-top: 2px;
     font-size: 2rem;
 }
-.hero .lessons{
+.hero .lessons {
     margin-left: auto;
     cursor: pointer;
     font-size: 1.3rem;
@@ -33,18 +32,18 @@
     justify-content: center;
     align-items: center;
 }
-.lessonsShow{ 
+.lessonsShow {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #3d3d3d;
 }
-.lessonsShow i{
+.lessonsShow i {
     margin-top: 6px;
     margin-left: 5px;
 }
-.searchField{
+.searchField {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -54,23 +53,23 @@
     border: 1px solid gray;
     border-radius: 8px;
     overflow: hidden;
-    padding-right:10px;
+    padding-right: 10px;
     height: 40px;
     width: 250px;
     font-size: 1rem;
 }
-.searchField input{
+.searchField input {
     border: none;
     outline: none;
     width: 85%;
     height: 100%;
 }
-.searchField input::placeholder{
+.searchField input::placeholder {
     font-weight: bold;
     color: #b6b4b4;
 }
 
-.searchField i{
+.searchField i {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -83,35 +82,34 @@
     color: #fff;
 }
 
-
 /*  drop left for art section  */
-.lessons ul a:hover{
+.lessons ul a:hover {
     background-color: #1976d2;
     color: #fff;
 }
-.lessons ul{
+.lessons ul {
     position: relative;
 }
-.artDrop ul{
+.artDrop ul {
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
 }
-.artDrop li{
-    margin: .5rem 0;
+.artDrop li {
+    margin: 0.5rem 0;
     width: 100%;
     padding: 5px;
     padding-right: 10px;
 }
-.artDrop ul a{
+.artDrop ul a {
     text-decoration: none;
     color: #1976d2;
 }
-.artDrop{
+.artDrop {
     display: flex;
     justify-content: start;
-    align-items:flex-start;
+    align-items: flex-start;
     border: 1px solid gainsboro;
     border-radius: 3px;
     position: absolute;
@@ -120,15 +118,73 @@
     display: none;
     width: 100%;
     height: 100%;
-
 }
-.lessons ul li:hover .artDrop{
+.lessons ul li:hover .artDrop {
     display: flex;
 }
-.artDrop li:hover{
+.artDrop li:hover {
     background-color: rgba(240, 240, 240, 0.644);
 }
-.artDrop li a:hover{
+.artDrop li a:hover {
     background-color: transparent;
     color: #1976d2;
+}
+
+/*  *************************************************** */
+/*  *************************************************** */
+/*  *************************************************** */
+/* my profile section */
+.myProfile {
+    margin: 5rem 3rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* right profile section */
+.rightSection {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightSection i {
+    font-size: 10rem;
+}
+.rightSection .info {
+    text-align: center;
+}
+.rightSection .questionBox {
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 1.2rem 0.9rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.rightSection .questionBox h5 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.rightSection .questionBox p {
+    line-height: 1.6rem;
+}
+.rightSection .questionBox .button {
+    color: #fff;
+    width: 78%;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #17d292;
+    transition: all 150ms linear;
+}
+.rightSection .questionBox .button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+/* left profile section */
+.leftSection {
+    width: 75%;
 }
