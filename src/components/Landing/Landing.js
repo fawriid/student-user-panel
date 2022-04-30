@@ -14,6 +14,9 @@ const Landing = () => {
             <Navbar />
             <MainContent />
             <RigthSideMenu />
+            <button className={styles.fixedMenu}> 
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
         </>
     );
 };
