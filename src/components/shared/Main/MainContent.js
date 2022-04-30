@@ -1,5 +1,6 @@
 import React from "react";
 
+import { LabelHTMLAttributes } from "react";
 import styles from "./MainContent.module.css";
 
 const MainContent = () => {
@@ -103,6 +104,7 @@ const MainContent = () => {
                         </div>
                     </div>
                     <div className={styles.myProfile}>
+                        {/* right section */}
                         <div className={styles.rightSection}>
                             <i className="bi bi-person-circle"></i>
                             <div className={styles.info}>
@@ -135,7 +137,7 @@ const MainContent = () => {
                                                 style={{
                                                     backgroundColor: "#1976d2",
                                                     border: "none",
-                                                    paddingBottom: '0'
+                                                    paddingBottom: "0",
                                                 }}
                                             >
                                                 <button
@@ -147,7 +149,7 @@ const MainContent = () => {
                                                         color: "#fff",
                                                         outline: "none",
                                                         border: "none",
-                                                        marginRight:'auto'
+                                                        marginRight: "auto",
                                                     }}
                                                 >
                                                     <i
@@ -207,6 +209,8 @@ const MainContent = () => {
                                 {/*  */}
                             </div>
                         </div>
+
+                        {/* left section */}
                         <div className={styles.leftSection}>
                             <div className={styles.leftHeader}>
                                 <div className={styles.profileTitle}>
@@ -222,7 +226,22 @@ const MainContent = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className={styles.profileInformaions}></div> */}
+                            <div className={styles.profileInformaions}>
+                                <div className={styles.infoUsername}>
+                                    <p>نام کاربری :</p>
+                                    <span>rogn</span>
+                                </div>
+                                <div className={styles.infoContact}>
+                                    <div className={styles.infoContactItems}>
+                                        <label>شماره همراه :</label>
+                                        <input type="text" placeholder="0994526384" />
+                                    </div>
+                                    <div className={styles.infoContactItems}>
+                                        <label>ایمیل :</label>
+                                        <input type="text" placeholder="naslqalam@gmil.com" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -297,3 +297,51 @@
     font-size: 1.5rem;
     color: rgb(148, 148, 13);
 }
+/* profileInformaions */
+.profileInformaions{
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 3rem 2rem ;
+    border-radius: 5px;
+}
+.infoUsername span{
+    color: #1976d2;
+    margin: 0 .5rem 0 0;
+}
+.infoContact{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 0rem 0 5rem;
+}
+.infoContactItems{
+    font-size: 1.3rem;
+    border: 2px solid #f2f2f2;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    padding: 1.2rem 1rem .8rem 1rem;
+}
+.infoContactItems label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform:translateY(-50%);
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    padding: .5rem;
+    margin-right: 10px;
+}
+.infoContactItems input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.infoContactItems:first-child{
+    margin-left:auto;
+    border: 2px solid #1976d2;
+    border-radius: 10px;
+}
+/* .infoContactItems:hover{
+    border: 2px solid #1976d2;
+} */
