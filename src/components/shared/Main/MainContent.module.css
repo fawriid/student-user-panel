@@ -24,6 +24,9 @@
     margin-top: 2px;
     font-size: 2rem;
 }
+.dNoneUser{
+    display: none;
+}
 .hero .lessons {
     margin-left: auto;
     cursor: pointer;
@@ -345,3 +348,153 @@
 /* .infoContactItems:hover{
     border: 2px solid #1976d2;
 } */
+
+
+
+/* responsive *********************** */
+@media (max-width:950px) {
+    .infoContactItems{
+    font-size: 1.1rem;
+    border: 2px solid #f2f2f2;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    padding: .8rem;
+}
+.hero h3 {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+.hero h3 i {
+    font-size: 1.8rem;
+}
+.hero .lessons {
+    font-size: 1.2rem;
+}
+.searchField {
+    width: 230px;
+}
+}
+@media (max-width:830px) {
+    .infoContactItems{
+    font-size: 1rem;
+    border: 2px solid #f2f2f2;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    padding: .7rem;
+}
+.hero h3 {
+    margin-left: 2.5rem;
+    font-size: 1.3rem;
+}
+.hero h3 i {
+    font-size: 1.3rem;
+}
+.hero .lessons {
+    font-size: 1.1rem;
+}
+.searchField {
+    width: 220px;
+}
+.infoContactItems label{
+    font-size: .8rem;
+    padding: .5rem;
+    margin-right: 10px;
+}
+.infoContactItems input{
+    font-size: 1rem;
+}
+}
+@media (max-width:830px){
+    .myProfile {
+    margin: 2rem 3rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.rightSection {
+    width: 90%;
+}
+.leftSection {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.rightSection .questionBox {
+    margin-top: 2rem;
+    padding: 1.2rem 0.9rem;
+    width: 80%;
+}
+.hero h3 {
+    margin-left: 2.1rem;
+    font-size: 1.1rem;
+}
+.hero h3 i {
+    font-size: 1.1rem;
+}
+.hero .lessons {
+    font-size: 1rem;
+}
+.searchField {
+    width: 200px;
+}
+.infoContactItems label{
+    font-size: .7rem;
+    padding: .5rem;
+    margin-right: 10px;
+}
+.infoContactItems input{
+    font-size: .9rem;
+}
+}
+@media (max-width:750px){
+    .hero .lessons {
+    font-size: 1.2rem;
+}
+.user > div > button span{
+    display: none;
+    font-size: .7rem;
+}
+.dNoneUser{
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+    display: block;
+    background-color: #1976d2;
+    cursor: default;
+}
+.dNoneUser a{
+    color: #fff;
+}
+.user ul{
+    padding-top: 0;
+    border-radius: 10px;
+}
+.infoContact{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+.infoContactItems{
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 90%;
+}
+.infoContactItems label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform:translateY(-50%);
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    padding: .5rem;
+    margin-right: 10px;
+}
+.infoContactItems:first-child{
+    margin-left:0;
+   
+}
+}

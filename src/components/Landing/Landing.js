@@ -12,8 +12,8 @@ const Landing = () => {
     return (
         <>
             <Navbar />
-            <MainContent />
             <RigthSideMenu />
+            <MainContent />
             <button className={styles.fixedMenu}> 
                 <i class="bi bi-three-dots-vertical"></i>
             </button>

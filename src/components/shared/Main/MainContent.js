@@ -79,7 +79,10 @@ const MainContent = () => {
                                         className="bi bi-person-circle"
                                         style={{ marginLeft: "5px" }}
                                     ></i>
+                                    <span>
                                     سلام, رزیتا گل تراش
+
+                                    </span>
                                 </button>
                                 <ul
                                     className="dropdown-menu"
@@ -89,6 +92,11 @@ const MainContent = () => {
                                         borderRadius: "10px",
                                     }}
                                 >
+                                    <li className={styles.dNoneUser}>
+                                        <a className="dropdown-item" href="#" >
+                                            سلام رزیتا گل تراش      
+                                        </a>
+                                    </li>
                                     <li>
                                         <a className="dropdown-item" href="#">
                                             پروفایل کاربر
