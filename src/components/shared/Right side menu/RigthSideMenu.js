@@ -29,7 +29,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-person-circle"></i>
+                            <i className="bi bi-person-circle"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>پروفایل</span>
@@ -37,7 +37,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-journal-bookmark-fill"></i>
+                            <i className="bi bi-journal-bookmark-fill"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>درس </span>
@@ -45,7 +45,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-layers-fill"></i>
+                            <i className="bi bi-layers-fill"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>پکیج دروس</span>
@@ -53,7 +53,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-envelope-open-fill"></i>
+                            <i className="bi bi-envelope-open-fill"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>آزمون</span>
@@ -61,7 +61,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-clipboard2-check-fill"></i>
+                            <i className="bi bi-clipboard2-check-fill"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>برنامه هفتگی</span>
@@ -69,7 +69,7 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-basket2"></i>
+                            <i className="bi bi-basket2"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>پرداخت ها</span>
@@ -77,15 +77,15 @@ const RigthSideMenu = () => {
                     </li>
                     <li>
                         <a  href='#'>
-                            <i class="bi bi-boombox-fill"></i>
+                            <i className="bi bi-boombox-fill"></i>
                         </a>
                         <span className={styles.description}>
                             <span className={styles.descriptionInside}>مشاور</span>
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
-                            <i class="bi bi-power"></i>
+                        <a href='#'>
+                            <i className="bi bi-power"></i>
                         </a>
                     </li>
                 </ul>

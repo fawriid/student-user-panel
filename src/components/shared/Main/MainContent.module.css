@@ -184,6 +184,67 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
+
+/* modall bootstrap */
+.questionModal{
+    background-color: #1976d2;
+    position: relative;
+}
+.questionModalFooter{
+    border: none;
+    background-color: #1976d2;
+    padding: 0 4rem;
+    padding-bottom:1rem;
+}
+.questionModalFooter button{
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #17d292;
+    transition: all 150ms linear;
+}
+.questionModalFooter button:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.questionModal form{
+    text-align: right;
+    padding: 0 2rem;
+}
+.questionModal form > div{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 1rem 0;
+}
+.questionModal form > div:first-child{
+    margin-top: 0;
+}
+.questionModal form > div :last-child{
+    margin-top: .5rem;
+}
+.questionModal form > div input {
+    padding: .5rem;
+    height: 40px;
+    outline: none;
+    border: none;
+} 
+.questionModal textarea{
+    resize: none;
+    height: 150px;
+    padding: .5rem;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
 /* left profile section */
 .leftSection {
     margin-top: 3rem;
@@ -209,7 +270,7 @@
     text-align: left;
     border-bottom: 4px solid #ccc;
     flex-grow:1 ;
-    padding-bottom: .65rem;
+    padding-bottom: .7rem;
 }
 .priceSection > div{
     display: flex;

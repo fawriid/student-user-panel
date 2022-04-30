@@ -9,7 +9,7 @@ const MainContent = () => {
                 <div className={styles.wrapper}>
                     <div className={styles.hero}>
                         <h3>
-                            <i class="bi bi-tropical-storm"></i>
+                            <i className="bi bi-tropical-storm"></i>
                             آنلاین خوان
                         </h3>
                         <div className={styles.lessons}>
@@ -18,7 +18,7 @@ const MainContent = () => {
                                     className={styles.lessonsShow}
                                     data-bs-toggle="dropdown"
                                 >
-                                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                                    <i className="bi bi-grid-3x3-gap-fill"></i>
                                     دروس
                                 </a>
 
@@ -63,7 +63,7 @@ const MainContent = () => {
                             </div>
                             <div className={styles.searchField}>
                                 <input type="text" placeholder="جستجوی درس ..." />
-                                <i class="bi bi-search"></i>
+                                <i className="bi bi-search"></i>
                             </div>
                         </div>
                         <div className={styles.user}>
@@ -104,7 +104,7 @@ const MainContent = () => {
                     </div>
                     <div className={styles.myProfile}>
                         <div className={styles.rightSection}>
-                            <i class="bi bi-person-circle"></i>
+                            <i className="bi bi-person-circle"></i>
                             <div className={styles.info}>
                                 <h5>رزیتا گل تراش</h5>
                                 <span>دانش اموز</span>
@@ -116,7 +116,95 @@ const MainContent = () => {
                                     پس اگر هر سوالی داری,
                                     <br /> برایم ارسال کن
                                 </p>
-                                <button className={styles.button}>ارسال</button>
+                                <button
+                                    className={styles.button}
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#sendQuestion"
+                                >
+                                    ارسال
+                                </button>
+                                {/*  */}
+                                <div className="modal fade" id="sendQuestion">
+                                    <div className="modal-dialog modal-dialog-centered">
+                                        <div
+                                            className="modal-content"
+                                            style={{ border: "none" }}
+                                        >
+                                            <div
+                                                className="modal-header"
+                                                style={{
+                                                    backgroundColor: "#1976d2",
+                                                    border: "none",
+                                                    paddingBottom: '0'
+                                                }}
+                                            >
+                                                <button
+                                                    // className="btn-close btn-light text-white"
+                                                    data-bs-dismiss="modal"
+                                                    style={{
+                                                        fontSize: "1rem",
+                                                        backgroundColor: "transparent",
+                                                        color: "#fff",
+                                                        outline: "none",
+                                                        border: "none",
+                                                        marginRight:'auto'
+                                                    }}
+                                                >
+                                                    <i
+                                                        className="bi bi-x"
+                                                        style={{
+                                                            color: "#fff",
+                                                            fontSize: "1.7rem",
+                                                        }}
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div
+                                                className={`${styles.questionModal} modal-body`}
+                                            >
+                                                <form>
+                                                    <div>
+                                                        <lebel htmlFor="sendQuestionName">
+                                                            نام :
+                                                        </lebel>
+                                                        <input
+                                                            type="text"
+                                                            id="sendQuestionName"
+                                                        />
+                                                    </div>
+                                                    <div>
+                                                        <lebel htmlFor="sendQuestionEmail">
+                                                            ایمیل :
+                                                        </lebel>
+                                                        <input
+                                                            type="email"
+                                                            id="sendQuestionEmail"
+                                                        />
+                                                    </div>
+                                                    <div>
+                                                        <lebel htmlFor="sendQuestionMsg">
+                                                            پیام :
+                                                        </lebel>
+                                                        <textarea
+                                                            type="textarea"
+                                                            id="sendQuestionMsg"
+                                                        />
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div
+                                                className={`modal-footer ${styles.questionModalFooter} `}
+                                                style={{
+                                                    border: "none",
+                                                    padding: "0 3rem 2rem",
+                                                }}
+                                            >
+                                                <button>ارسال</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/*  */}
                             </div>
                         </div>
                         <div className={styles.leftSection}>
@@ -130,7 +218,7 @@ const MainContent = () => {
                                             <p>0.000 هزار تومان</p>
                                             <span>مبلغ کیف پول شما</span>
                                         </div>
-                                        <i class="bi bi-coin"></i>
+                                        <i className="bi bi-coin"></i>
                                     </div>
                                 </div>
                             </div>
