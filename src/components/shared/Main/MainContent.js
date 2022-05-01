@@ -93,9 +93,7 @@ const MainContent = () => {
                                     id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown"
                                 >
-                                    <i
-                                        className="bi bi-person-circle"
-                                    ></i>
+                                    <i className="bi bi-person-circle"></i>
                                     <span>سلام, رزیتا گل تراش</span>
                                     <span className="dropdown-toggle"></span>
                                 </button>
@@ -129,7 +127,11 @@ const MainContent = () => {
                     <div className={styles.myProfile}>
                         {/* right section */}
                         <div className={styles.rightSection}>
-                            <i className="bi bi-person-circle"></i>
+                            <i className={`bi bi-person-circle ${styles.profilePicture}`}>
+                                <span>
+                                    تغییر تصویر<i class="bi bi-camera-fill"></i>
+                                </span>
+                            </i>
                             <div className={styles.info}>
                                 <h5>رزیتا گل تراش</h5>
                                 <span>دانش اموز</span>

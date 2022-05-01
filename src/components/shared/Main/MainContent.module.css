@@ -361,6 +361,37 @@
 /* .infoContactItems:hover{
     border: 2px solid #1976d2;
 } */
+.profilePicture{
+    position: relative;
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+.profilePicture span{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 5;
+    background-color: #17d292;
+    padding: .2rem 1rem .3rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 200ms linear;
+}
+.profilePicture:hover span{
+    display: block;
+
+}
+.profilePicture span i{
+    font-size: 1rem;
+    margin-right: .3rem;
+    transform: translateY(2px);
+}
 
 
 
