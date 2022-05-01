@@ -10,12 +10,17 @@ const RigthSideMenu = () => {
 
     return (
         <>
-            
-            <div className={`${styles.menu} ${expand ? styles.expand : ''}`}>
+            <div className={`${styles.menu} ${expand ? styles.expand : ""}`}>
                 <ul className={styles.menuList}>
                     <li>
-                        <button onClick={() => {setExpand(!expand)}}>
-                            <span className={styles.menuFirstLabel}>پنل کاربری دانش اموز</span>
+                        <button
+                            onClick={() => {
+                                setExpand(!expand);
+                            }}
+                        >
+                            <span className={styles.menuFirstLabel}>
+                                پنل کاربری دانش اموز
+                            </span>
                             <i className="bi bi-list"></i>
                             <i
                                 className={`${styles.caret} bi bi-caret-left-fill`}
@@ -28,7 +33,7 @@ const RigthSideMenu = () => {
                         </button>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-person-circle"></i>
                         </a>
                         <span className={styles.description}>
@@ -36,7 +41,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-journal-bookmark-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -44,7 +49,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-layers-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -52,7 +57,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-envelope-open-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -60,7 +65,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-clipboard2-check-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -68,7 +73,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-basket2"></i>
                         </a>
                         <span className={styles.description}>
@@ -76,7 +81,7 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a  href='#'>
+                        <a href="#">
                             <i className="bi bi-boombox-fill"></i>
                         </a>
                         <span className={styles.description}>
@@ -84,11 +89,18 @@ const RigthSideMenu = () => {
                         </span>
                     </li>
                     <li>
-                        <a href='#'>
+                        <a href="#">
                             <i className="bi bi-power"></i>
                         </a>
                     </li>
                 </ul>
+
+                <i
+                    onClick={() => {
+                        setExpand(!expand);
+                    }}
+                    className={`bi bi-person-lines-fill ${styles.iconUserRes}`}
+                ></i>
             </div>
         </>
     );

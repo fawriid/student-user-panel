@@ -639,8 +639,19 @@
     .rightSection .questionBox{
         width: 90%;
     }
+    .leftHeader *{
+        border: none;
+    }
 }
 @media (max-width:390px) {
+    .leftHeader{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profileTitle{
+        margin: 0;
+    }
     .hero h3{
         font-size: 1.2rem;
     }

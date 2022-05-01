@@ -188,9 +188,54 @@
     margin-left: 5px;
     display: block;
 }
+.iconUserRes{
+    display: none;
+}
 
 @media (max-width:550px) {
     .menu{
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;  
+        height: 0;
+    }
+    .menuList{
+        z-index: -5;
+    }
+    .iconUserRes{
+        display: block;
+        z-index: 6;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        font-size:2rem;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .menu.expand{
+        z-index: 5;
+        width: 60%;
+        margin: 0 auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0px);
+        height: 100vh;
+    }
+    .menu.expand .menuList {
+        height: 100%;
+        overflow: visible;
+        /* transform: translateX(0); */
+    }
+    .menuList li:first-child i{
         display: none;
     }
 }
