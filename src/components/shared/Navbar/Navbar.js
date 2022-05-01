@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+    const [expand , setExpand] = useState(false)
     return (
         <>
             <div className={styles.container}>
@@ -18,7 +19,19 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={styles.navbarTwoSides}>
+                <div className={`${styles.navbarTwoSides} ${expand && styles.expand}`}>
+                    <button
+                        onClick={() => setExpand(!expand)}
+                        className={`${styles.leftNavMenu} ${
+                            expand ? styles.expand : null
+                        }`}
+                    >
+                        {expand ? 
+                        <i class="bi bi-x-circle"></i>
+                        :
+                        <i className="bi bi-list"></i>
+                        }
+                    </button>
                     <ul>
                         <li>
                             <a href="#">خرید پکیج درسی</a>

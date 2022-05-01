@@ -57,6 +57,12 @@
     margin-bottom: 5rem;
 }
 
+.leftNavMenu{
+    display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
 
 
 /* responsive */
@@ -65,5 +71,43 @@
     margin: 0 .5rem;
     padding: .25rem ;
     font-size: 0.8rem;
+}
+.leftNavMenu{
+    display: block;
+    font-size: 1.8rem;
+}
+.navbarTwoSides:last-child{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navbarTwoSides:last-child ul a{
+    color: #fff;
+
+}
+.navbarTwoSides:last-child ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #3e8edd;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    transition: all 200ms linear;
+    top: 3.4rem;
+    max-height: 0;
+    opacity: 0;
+    z-index: -3;
+}
+
+.navbarTwoSides:last-child.expand ul{
+    z-index: 99;
+    opacity: 1;
+    height: 150px;
+    max-height: 100vh;
+}
+.navbarTwoSides:last-child ul li:hover{
+    background-color: #b3cde7;
+    width: 100%;
+    padding: .3rem;
 }
 }

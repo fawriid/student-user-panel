@@ -15,7 +15,7 @@ const Landing = () => {
             <RigthSideMenu />
             <MainContent />
             <button className={styles.fixedMenu}> 
-                <i class="bi bi-three-dots-vertical"></i>
+                <i className="bi bi-three-dots-vertical"></i>
             </button>
         </>
     );

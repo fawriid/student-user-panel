@@ -19,14 +19,32 @@ const MainContent = () => {
                                     className={styles.lessonsShow}
                                     data-bs-toggle="dropdown"
                                 >
-                                    <i className="bi bi-grid-3x3-gap-fill"></i>
-                                    دروس
+                                    <i
+                                        className={`bi bi-search ${styles.lessonsIconRes}`}
+                                    ></i>
+                                    <i
+                                        className={`bi bi-grid-3x3-gap-fill ${styles.dNoneLessonsTitle}`}
+                                    ></i>
+                                    <span className={styles.dNoneLessonsTitle}>دروس</span>
                                 </a>
 
                                 <ul
-                                    className="dropdown-menu"
+                                    className={`dropdown-menu ${styles.lessonsMailUl}`}
                                     style={{ textAlign: "right" }}
                                 >
+                                    <li>
+                                        <a>
+                                            <div
+                                                className={`${styles.searchField} ${styles.searchFieldRes}`}
+                                            >
+                                                <input
+                                                    type="text"
+                                                    placeholder="جستجوی درس ..."
+                                                />
+                                                <i className="bi bi-search"></i>
+                                            </div>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a className="dropdown-item" href="#">
                                             هنر
@@ -70,19 +88,16 @@ const MainContent = () => {
                         <div className={styles.user}>
                             <div className="dropdown">
                                 <button
-                                    className="p-2 px-3 btn btn-primary rounded-pill dropdown-toggle"
+                                    className="p-2 px-3 btn btn-primary rounded-pill"
                                     type="button"
                                     id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown"
                                 >
                                     <i
                                         className="bi bi-person-circle"
-                                        style={{ marginLeft: "5px" }}
                                     ></i>
-                                    <span>
-                                    سلام, رزیتا گل تراش
-
-                                    </span>
+                                    <span>سلام, رزیتا گل تراش</span>
+                                    <span className="dropdown-toggle"></span>
                                 </button>
                                 <ul
                                     className="dropdown-menu"
@@ -93,8 +108,8 @@ const MainContent = () => {
                                     }}
                                 >
                                     <li className={styles.dNoneUser}>
-                                        <a className="dropdown-item" href="#" >
-                                            سلام رزیتا گل تراش      
+                                        <a className="dropdown-item" href="#">
+                                            سلام رزیتا گل تراش
                                         </a>
                                     </li>
                                     <li>
@@ -246,7 +261,10 @@ const MainContent = () => {
                                     </div>
                                     <div className={styles.infoContactItems}>
                                         <label>ایمیل :</label>
-                                        <input type="text" placeholder="naslqalam@gmil.com" />
+                                        <input
+                                            type="text"
+                                            placeholder="naslqalam@gmil.com"
+                                        />
                                     </div>
                                 </div>
                             </div>
