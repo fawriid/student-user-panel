@@ -526,9 +526,15 @@
     display: block;
 }
 
-
+.hero{
+    margin: 0 1rem;
+}
 .hero h3{
     margin: 0;
+    font-size: 1.7rem;
+}
+.hero h3 i{
+    font-size: 1.8rem;
 }
 .hero .user{
     margin: 0;
@@ -632,5 +638,19 @@
     }
     .rightSection .questionBox{
         width: 90%;
+    }
+}
+@media (max-width:390px) {
+    .hero h3{
+        font-size: 1.2rem;
+    }
+    .hero h3 i{
+        font-size: 1.3rem;
+    }
+    .lessons i {
+        font-size: 1rem;
+    }
+    .user > div > button i{
+        font-size: 1rem;
     }
 }
