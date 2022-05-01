@@ -53,9 +53,7 @@
 }
 
 /*  */
-.container{
-    margin-bottom: 5rem;
-}
+
 
 .leftNavMenu{
     display: none;
@@ -110,4 +108,12 @@
     width: 100%;
     padding: .3rem;
 }
+}
+@media (max-width:550px) {
+    .container{
+        padding-right: 1rem;
+    }
+    .navbarTwoSides:first-child ul li:first-child {
+        margin-right: 0;
+    }
 }

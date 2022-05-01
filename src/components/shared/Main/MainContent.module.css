@@ -170,7 +170,7 @@
 .rightSection .info {
     text-align: center;
 }
-.rightSection .questionBox {
+.questionBox {
     margin-top: 2rem;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -613,4 +613,24 @@
     color: black;
 }
 
+}
+@media (max-width:550px) {
+    .container{
+        padding: 0;
+        padding-top: 4rem;
+    }
+    .hero{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .myProfile{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .rightSection{
+        width: 100%;
+    }
+    .rightSection .questionBox{
+        width: 90%;
+    }
 }
